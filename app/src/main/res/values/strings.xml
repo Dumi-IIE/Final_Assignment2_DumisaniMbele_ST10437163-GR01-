@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Assignment 2</string>
+    <string name="heading">Welcome to Rex your Tamagotchi App</string>
+    <string name="link">Get Started</string>
+    <string name="feed">Feed</string>
+    <string name="clean">Clean</string>
+    <string name="play">Play</string>
+    <string name="hunger">Hunger</string>
+    <string name="cleanliness">Cleanliness</string>
+    <string name="playfulness">Playfulness</string>
+
+
+</resources>

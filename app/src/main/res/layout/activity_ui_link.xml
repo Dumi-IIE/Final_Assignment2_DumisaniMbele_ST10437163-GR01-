@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB68F"
+    tools:context=".UI_link">
+
+    <ImageView
+        android:id="@+id/defaultDog"
+        android:layout_width="223dp"
+        android:layout_height="278dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="356dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_nobg" />
+
+    <Button
+        android:id="@+id/feedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="274dp"
+        android:layout_marginBottom="244dp"
+        android:text="@string/feed"
+        android:backgroundTint="@color/darkOrange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defaultDog" />
+
+    <Button
+        android:id="@+id/cleaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="244dp"
+        android:text="@string/clean"
+        android:backgroundTint="@color/darkOrange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/feedButton"
+        app:layout_constraintTop_toBottomOf="@+id/defaultDog" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="244dp"
+        android:text="@string/play"
+        android:backgroundTint="@color/darkOrange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cleaButton"
+        app:layout_constraintTop_toBottomOf="@+id/defaultDog" />
+
+    <TextView
+        android:id="@+id/HungerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="160dp"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="@string/hunger"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedButton" />
+
+    <TextView
+        android:id="@+id/CleanLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="106dp"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="@string/cleanliness"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HungerLabel"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/PlayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="@string/playfulness"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CleanLabel" />
+
+    <TextView
+        android:id="@+id/hungerRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="157dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toEndOf="@+id/HungerLabel"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+    <TextView
+        android:id="@+id/cleanLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="101dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/CleanLabel"
+        app:layout_constraintTop_toBottomOf="@+id/hungerRating"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/playLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="48dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/PlayLabel"
+        app:layout_constraintTop_toBottomOf="@+id/cleanLabel"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
